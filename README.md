@@ -9,6 +9,7 @@ Welcome to the Blackjack game project! This project is a simple implementation o
 - [Getting Started](#getting-started)
 - [How to Play](#how-to-play)
 - [File Structure](#file-structure)
+- [Live Demo](#live-demo)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -50,6 +51,10 @@ The project has the following file structure:
 - `desk.css`: CSS file for styling the main game screen.
 - `desk.js`: JavaScript file for handling the main game logic.
 - `images/`: Directory containing images used in the game.
+
+## Live Demo
+
+Check out the live demo [here](https://kerim-blackjack-site.netlify.app).
 
 ## Contributing
 
