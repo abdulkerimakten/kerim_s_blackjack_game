@@ -1,0 +1,87 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/table.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+    user-select: none;
+}
+
+
+
+#plate{
+    background-color: rgb(26, 47, 9);
+    border: 2px double rgb(34, 32, 32);
+    border-radius: 10px;
+    width: 200px;
+    margin: 5px auto;
+    color: goldenrod;
+}
+
+#croupier-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(6, 91, 11); */
+}
+
+
+#kerim{
+    margin: 10 30;
+    width: 150px;
+}
+
+#kerim-cards-el{
+    margin-right: 20px;
+}
+
+
+
+#message-el {
+    font-style: italic;
+    font-size: large;
+    max-width: max-content;
+    border: 3px groove rgb(216, 239, 228);
+    margin: 10px auto;
+    padding: 10px 10px;
+    
+}
+
+
+button{
+    color: #016f32;
+    width: 150px;
+    font-weight: bold;
+    background: goldenrod;
+    
+    border: 4px outset white;
+    border-radius: 2px;
+
+    padding: 4px 8px;
+
+    margin: 2px auto;
+
+    transition: box-shadow 0.1s;
+}
+
+button:active {
+    box-shadow: 0 0 5px rgb(210, 182, 182);
+}
+
+
+#cards-img-for-player{
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+img{
+    width: 80px;
+    position: relative;
+    margin: 0 -10px;
+}

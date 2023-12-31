@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="desk.css">
+    </head>
+    <body>
+        <div id="plate">
+            <h1>Blackjack</h1>
+        </div>
+
+        <div id="croupier-part">
+            
+            <div>
+                <img id="kerim" src="images/kurpiyerkerim.png" alt="croupier image">
+                <p id="kerim-sum-el">Sum(Croupier): </p>
+
+            </div>
+
+            <p id="kerim-cards-el">Cards(Croupier): </p>
+
+            <!-- croupier cards part -->
+            <div id="croupier-cards-part"></div>
+        </div>
+
+        <!-- middle part -->
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards(Player): </p>
+        
+        <!-- place of displaying cards -->
+        <div id="cards-img-for-player"></div>
+
+        <p id="sum-el">Sum(Player): </p>
+
+        <!-- buttons part -->
+        <button id="start-btn">START GAME</button>
+        <button id="newcard-btn">HIT</button>
+        <button id="stand-btn">STAND</button>
+        <button id="leave-btn">LEAVE</button>
+        <p id="player-el"></p>
+
+        <script src="desk.js" type="module"></script>
+    </body>
+</html>

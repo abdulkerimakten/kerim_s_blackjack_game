@@ -1,0 +1,96 @@
+body{
+    background-image: url("images/reddesk.jpeg");
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 44px;
+    font-weight: bold;
+    color: goldenrod;
+    background-color: rgb(26, 47, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+  
+.username {
+    margin: 20px;
+}
+  
+.username label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: #c5b737;
+    font-weight: bold;
+}
+  
+.username input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    padding: 10px;
+    border: 4px solid #333333;
+    border-radius: 10px;
+    outline: none;
+}
+  
+.tokens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+  
+.token {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    padding: 10px;
+    border: 4px solid #333333;
+    border-radius: 10px;
+    background-color: white;
+    color: #333333;
+    outline: none;
+}
+  
+.token:hover {
+    background-color: rgb(26, 47, 9);
+    color: whitesmoke;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.token:active{
+    background-color: greenyellow;
+}
+
+.tokens p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 34px;
+    font-weight: bold;
+    color: goldenrod;
+    grid-column: span 4;
+    text-align: center;
+}
+
+#enter-btn{
+    margin: 10px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: white;
+    color: #333333;
+}
+
+#enter-btn:hover{
+    background-color: rgb(26, 47, 9);
+    color: gold;
+}
+  
