@@ -380,8 +380,7 @@ standButton.addEventListener("click", function(){
     }
 })
 
-
 leaveButton.addEventListener("click", function(){
     localStorage.clear()
-    window.location.href = "enter_screen.html"
+    window.location.href = "index.html"
 })
