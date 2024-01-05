@@ -26,7 +26,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid rgb(6, 91, 11); */
 }
 
 
@@ -70,6 +69,16 @@ button{
 
 button:active {
     box-shadow: 0 0 5px rgb(210, 182, 182);
+}
+
+#player-el{
+    border: 2px dashed yellow;
+    border-radius: 5px;
+    background-color: brown;
+    font-weight: 600px;
+    height: 30px;
+    margin: 5px auto;
+    width: 600px;
 }
 
 
