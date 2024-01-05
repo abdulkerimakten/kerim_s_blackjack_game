@@ -144,7 +144,7 @@ function getToken(){
 // Function for showing info about name and money of the player
 function getInfo(nameval, moneyval){
 
-    playerEl.innerHTML = `Player: ${nameval} Money: ${moneyval}$`
+    playerEl.innerHTML = `PLAYER: ${nameval} _____ MONEY: ${moneyval}$`
 }
 
 
@@ -249,7 +249,7 @@ function renderGame(){
         }
         else{
             if(sumForCroupier > 21){
-                message = "YOU WON"
+                message = "YOU WON :):)"
                 money += token
             }
             else if (sumForCroupier <=20){
@@ -258,18 +258,22 @@ function renderGame(){
                     money += token
                 }
                 else if (sum === sumForCroupier){
-                    message = "DRAWN"
+                    message = "___DRAWN___"
                     messageColor = "yellow"
                     money += (token/2)
                 }
                 else{
-                    message = "YOU LOST"
+                    message = "YOU LOST..."
                     money -= token
+                    messageColor = "red"
+                    messageBackgroundColor= "white"
                 }
             }
             else if (sumForCroupier === 21){
-                message = "YOU LOST"
+                message = "YOU LOST..."
                 money -= token
+                messageColor = "red"
+                messageBackgroundColor= "white"
             }
         }
     } 
@@ -280,7 +284,7 @@ function renderGame(){
             money += token
         }
         else{
-            message = "DRAWN"
+            message = "___DRAWN___"
             messageColor = "yellow"
             hasPlayerBlackJack = true
             hasCroupierBlackJack = true
@@ -288,7 +292,7 @@ function renderGame(){
         }
     }
     else {
-        message = "You're out of the game!"
+        message = "You're out of the game! You LOST..."
         messageColor = "red"
         messageBackgroundColor= "white"
         isAlive = false
@@ -380,7 +384,8 @@ standButton.addEventListener("click", function(){
     }
 })
 
+
 leaveButton.addEventListener("click", function(){
     localStorage.clear()
-    window.location.href = "index.html"
+    window.location.href = "enter_screen.html"
 })
